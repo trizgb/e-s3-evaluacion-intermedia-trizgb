@@ -7,7 +7,7 @@ class PokeList extends Component {
         const {item} = this.props;
         return (
             <React.Fragment>
-                <img className="pokemonImage" src={item.url} alt={item.name}/>
+                <div className="imageContainer"><img className="pokemonImage" src={item.url} alt={item.name}/></div>
                 <h2 className="pokemonName">{item.name}</h2>
                 <ul className="typeList">
                 {item.types.map ((type, index) => {
